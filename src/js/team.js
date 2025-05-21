@@ -9,9 +9,7 @@ export default class Team {
     this.members.add(character);
   }
   addAll(...characters) {
-    characters.forEach(character => {
-      this.members.add(character);
-    });
+    characters.forEach(character => this.add(character));
   }
   toArray() {
     return Array.from(this.members);
